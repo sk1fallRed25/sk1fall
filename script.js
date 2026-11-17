@@ -52,8 +52,7 @@
       },
       poster: {
         eyebrow: 'CURRENTLY / 2026',
-        primary: 'Building things.<br>Breaking things<br>securely.',
-        secondary: 'Construiesc.<br>Testez.<br>Securizez.',
+        primary: 'Building things.<br>Testing ideas.<br>Securing systems.',
         caption: 'Interested in reliable backend systems and practical cybersecurity.'
       },
       snapshot: {
@@ -185,7 +184,7 @@
         subtitle:
           'First-place results and national distinctions in cybersecurity, AI, robotics, and energy systems.',
         firstPlaceTag: '1st Place · Team Competition',
-        firstPlaceTag2: '1st Place · Robotics & AI',
+        firstPlaceTag2: '1st Place · Team Competition · Robotics & AI',
         a1Desc:
           'Contributed to machine learning model training and result analysis in a team competition focused on AI-driven network traffic security across three detection tasks:',
         a1Task1: 'Binary Classification',
@@ -195,19 +194,21 @@
         a1Guide: 'Challenge Guide',
         a2Title: 'CRI Competition',
         a2Desc:
-          'Team project developing an AI-based system to control a robotic arm engineered to identify and sort colored cubes according to their positions on a 3×3 grid.',
+          'As a team, we developed an AI-based system to control a robotic arm that identified and sorted colored cubes according to their positions on a 3×3 grid.',
         a2Task1: 'AI Control System',
         a2Task2: 'Robotic Arm',
         a2Task3: '3×3 Grid Cube Sorting',
         a2Site: 'Competition Reference',
         a3Badge: 'Mențiunea I',
-        a3Desc: 'Awarded First Mention (Mențiunea I) for a project proposing a hydrogen-based energy system.',
+        a3Desc: 'As a team, we received First Mention (Mențiunea I) for a project proposing a hydrogen-based energy system.',
         a4Title: 'Concursul de Creativitate Severin Bumbaru',
         a4Badge: 'Mențiunea II',
-        a4Desc: 'Awarded Second Mention (Mențiunea II) for an AI-based plant recognition system.',
+        a4Desc: 'As a team, we received Second Mention (Mențiunea II) for an AI-based plant recognition system.',
         a5Badge: '54th Place · Certified',
         a5Desc:
-          'Team cybersecurity competition across multiple challenge categories, earning an official competition certificate.'
+          'Participated as part of a team in a cybersecurity competition covering multiple challenge categories and received an official certificate.',
+        verificationCodeLabel: 'Verification code:',
+        verifyCertificate: 'Verify certificate'
       },
       education: {
         title: 'Education & Credentials',
@@ -293,8 +294,7 @@
       },
       poster: {
         eyebrow: 'ÎN PREZENT / 2026',
-        primary: 'Construiesc.<br>Testez.<br>Securizez.',
-        secondary: 'Building things.<br>Breaking things<br>securely.',
+        primary: 'Construiesc.<br>Testez idei.<br>Securizez sisteme.',
         caption: 'Interesat de sisteme backend fiabile și securitate cibernetică aplicată.'
       },
       snapshot: {
@@ -426,7 +426,7 @@
         subtitle:
           'Premii I și distincții naționale în securitate cibernetică, inteligență artificială, robotică și sisteme energetice.',
         firstPlaceTag: 'Locul I · Competiție pe Echipe',
-        firstPlaceTag2: 'Locul I · Robotică & AI',
+        firstPlaceTag2: 'Locul I · Concurs pe echipe · Robotică & AI',
         a1Desc:
           'Am contribuit la antrenarea modelelor de machine learning și analiza rezultatelor într-o competiție pe echipe axată pe securitatea traficului de rețea, acoperind trei sarcini de detecție:',
         a1Task1: 'Clasificare Binară',
@@ -436,19 +436,21 @@
         a1Guide: 'Ghid Tehnic',
         a2Title: 'Concursul CRI',
         a2Desc:
-          'Proiect de echipă pentru dezvoltarea unui sistem bazat pe AI care controlează un braț robotic destinat identificării și sortării cuburilor colorate în funcție de poziția lor pe o grilă 3×3.',
+          'În cadrul echipei, am contribuit la dezvoltarea unui sistem bazat pe AI care controla un braț robotic pentru identificarea și sortarea cuburilor colorate în funcție de poziția lor pe o grilă 3×3.',
         a2Task1: 'Sistem Control AI',
         a2Task2: 'Braț Robotic',
         a2Task3: 'Sortare Cuburi Grilă 3×3',
         a2Site: 'Pagina Competiției',
         a3Badge: 'Mențiunea I',
-        a3Desc: 'Distins cu Mențiunea I pentru un proiect ce propune un sistem energetic bazat pe hidrogen.',
+        a3Desc: 'Am obținut, alături de echipă, Mențiunea I pentru un proiect care propune un sistem energetic bazat pe hidrogen.',
         a4Title: 'Concursul de Creativitate Severin Bumbaru',
         a4Badge: 'Mențiunea II',
-        a4Desc: 'Distins cu Mențiunea II pentru un sistem bazat pe AI destinat recunoașterii plantelor.',
+        a4Desc: 'Am obținut, alături de echipă, Mențiunea II pentru un sistem bazat pe AI destinat recunoașterii plantelor.',
         a5Badge: 'Locul 54 · Certificat',
         a5Desc:
-          'Competiție de securitate cibernetică pe echipe în multiple categorii de provocări, recompensată cu certificat oficial.'
+          'Am participat în cadrul unei echipe la o competiție de securitate cibernetică cu mai multe categorii de provocări și am obținut un certificat oficial.',
+        verificationCodeLabel: 'Cod de verificare:',
+        verifyCertificate: 'Verifică certificatul'
       },
       education: {
         title: 'Educație & Certificări',
