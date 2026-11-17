@@ -14,7 +14,7 @@
         langGroup: 'Language selector',
         menuOpen: 'Open navigation menu',
         menuClose: 'Close navigation menu',
-        heroPanel: 'Profile overview'
+        heroPoster: 'Editorial statement poster'
       },
       person: {
         name: 'Stefan Ionita',
@@ -37,15 +37,13 @@
           'Computer Engineering student at “Dunărea de Jos” University of Galați focused on backend architecture, relational databases, Linux environments, networking equipment, and applied cybersecurity. Experienced through practical IT infrastructure work, collaborative web development, and competitive AI and security challenges.',
         ctaProjects: 'View Projects',
         ctaContact: 'Contact Me',
-        ctaGithub: 'GitHub Profile',
-        panelTag: 'PROFILE OVERVIEW · 2026',
-        panelFocusLabel: 'Primary Focus',
-        panelFocusValue: 'Backend Systems, Databases & Cybersecurity',
-        panelAcademicLabel: 'Academic Track',
-        panelAcademicValue: 'Computer Engineering (Year IV, 2023–2027)',
-        panelHighlightsLabel: 'Competition Highlights',
-        panelHighlightsValue: '1st Place — AI Cyber Defence 2026 & CRI Competition',
-        panelBaseLabel: 'Location'
+        ctaGithub: 'GitHub Profile'
+      },
+      poster: {
+        eyebrow: 'CURRENTLY / 2026',
+        primary: 'Building things.<br>Breaking things<br>securely.',
+        secondary: 'Construiesc.<br>Testez.<br>Securizez.',
+        caption: 'Interested in reliable backend systems and practical cybersecurity.'
       },
       about: {
         title: 'About Me',
@@ -194,7 +192,7 @@
         langGroup: 'Selector de limbă',
         menuOpen: 'Deschide meniul de navigație',
         menuClose: 'Închide meniul de navigație',
-        heroPanel: 'Prezentare generală profil'
+        heroPoster: 'Poster editorial'
       },
       person: {
         name: 'Ștefan Ioniță',
@@ -217,15 +215,13 @@
           'Student la Calculatoare în cadrul Universității „Dunărea de Jos” din Galați, orientat spre arhitectură backend, baze de date relaționale, medii Linux, echipamente de rețea și securitate cibernetică aplicată. Experiență dobândită prin activități practice de infrastructură IT, dezvoltare web colaborativă și competiții tehnice de AI și securitate.',
         ctaProjects: 'Vezi proiectele',
         ctaContact: 'Contactează-mă',
-        ctaGithub: 'Profil GitHub',
-        panelTag: 'REZUMAT PROFIL · 2026',
-        panelFocusLabel: 'Direcții Principale',
-        panelFocusValue: 'Sisteme Backend, Baze de Date & Securitate Cibernetică',
-        panelAcademicLabel: 'Parcurs Academic',
-        panelAcademicValue: 'Calculatoare (Anul IV, 2023–2027)',
-        panelHighlightsLabel: 'Rezultate Competiții',
-        panelHighlightsValue: 'Locul I — AI Cyber Defence 2026 & Concursul CRI',
-        panelBaseLabel: 'Locație'
+        ctaGithub: 'Profil GitHub'
+      },
+      poster: {
+        eyebrow: 'ÎN PREZENT / 2026',
+        primary: 'Construiesc.<br>Testez.<br>Securizez.',
+        secondary: 'Building things.<br>Breaking things<br>securely.',
+        caption: 'Interesat de sisteme backend fiabile și securitate cibernetică aplicată.'
       },
       about: {
         title: 'Despre mine',
@@ -391,7 +387,7 @@
       ogDesc.setAttribute('content', dict.meta.description);
     }
 
-    // Translate all text nodes mapped with data-i18n
+    // Translate plain text nodes
     document.querySelectorAll('[data-i18n]').forEach((el) => {
       const key = el.getAttribute('data-i18n');
       const value = getNestedValue(dict, key);
@@ -400,7 +396,16 @@
       }
     });
 
-    // Translate all ARIA labels mapped with data-i18n-aria
+    // Translate multiline poster statements
+    document.querySelectorAll('[data-i18n-html]').forEach((el) => {
+      const key = el.getAttribute('data-i18n-html');
+      const value = getNestedValue(dict, key);
+      if (value !== null) {
+        el.innerHTML = value;
+      }
+    });
+
+    // Translate ARIA labels
     document.querySelectorAll('[data-i18n-aria]').forEach((el) => {
       const key = el.getAttribute('data-i18n-aria');
       const value = getNestedValue(dict, key);
@@ -416,7 +421,7 @@
       btn.setAttribute('aria-pressed', String(isSelected));
     });
 
-    // Sync mobile menu button aria-label with current open/closed state
+    // Sync mobile menu button aria-label
     const menuToggle = document.getElementById('menu-toggle');
     const primaryNav = document.getElementById('primary-nav');
     if (menuToggle && primaryNav) {
@@ -427,7 +432,7 @@
     try {
       localStorage.setItem('portfolio_lang', currentLang);
     } catch (_) {
-      // Ignore storage restrictions in private browsing modes
+      // Ignore storage restrictions
     }
   }
 
@@ -524,7 +529,6 @@
           copyBtn.textContent = translations[currentLang].contact.copyBtn;
         }, 2000);
       } catch (_) {
-        // Fallback if clipboard API is unavailable
         window.location.href = `mailto:${email}`;
       }
     });
