@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0a0e14">
+<meta name="description" content="Stefan Ionita — Backend Developer and Cybersecurity Analyst, Galați, Romania.">
+<title>Stefan Ionita — Backend Developer | Cybersecurity</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{color-scheme:dark;--bg:#0a0e14;--panel:#101722;--panel2:#141e2b;--line:#202c3a;--text:#e7edf5;--muted:#9aa8ba;--dim:#65758a;--cyan:#55d6e8;--violet:#b5a0ff;--green:#7ed6ae;--max:1000px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font:15px/1.7 Inter,system-ui,sans-serif}body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.45;background-image:radial-gradient(#263345 1px,transparent 1px);background-size:28px 28px}a{color:var(--cyan);text-decoration:none}a:hover{text-decoration:underline}.mono,.eyebrow,.date,.tag,.nav a,.prompt{font-family:"DM Mono",monospace}.wrap{width:min(var(--max),calc(100% - 44px));margin:auto;position:relative}.top{position:sticky;top:0;z-index:5;background:#0a0e14df;backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}.nav{height:64px;display:flex;align-items:center;justify-content:space-between}.logo{font:500 14px "DM Mono";color:var(--text)}.logo b{color:var(--cyan)}.navlinks{display:flex;gap:22px;align-items:center}.nav a{font-size:12px;color:var(--muted)}.nav a:hover{color:var(--cyan);text-decoration:none}.lang{border:1px solid var(--line);background:var(--panel);color:var(--cyan);padding:7px 10px;border-radius:5px;font:12px "DM Mono";cursor:pointer}.hero{padding:92px 0 74px}.prompt{color:var(--violet);font-size:13px;margin-bottom:16px}.prompt:before{content:"$ ";color:var(--dim)}h1{font:700 clamp(36px,7vw,62px)/1.06 "Space Grotesk";letter-spacing:-1.8px;margin:0}.role{font:14px "DM Mono";color:var(--muted);margin:18px 0 8px}.role span{color:var(--violet)}.location{color:var(--dim);font-size:13px}.intro{max-width:720px;color:var(--muted);font-size:16px;margin:26px 0}.actions{display:flex;gap:10px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;border:1px solid var(--line);padding:9px 14px;border-radius:5px;color:var(--text);font:12px "DM Mono";background:var(--panel);transition:.15s}.btn:hover{border-color:var(--cyan);background:#55d6e812;text-decoration:none}.btn.primary{color:var(--cyan);border-color:#55d6e855;background:#55d6e812}.section{padding:46px 0;border-top:1px solid #1a2430}.eyebrow{font-size:13px;color:var(--cyan);margin-bottom:22px}.eyebrow:before{content:"$ ";color:var(--dim)}h2{font:600 23px "Space Grotesk";margin:0 0 18px}.about{max-width:760px;color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.card{background:var(--panel);border:1px solid var(--line);border-radius:7px;padding:19px}.card h3{font:600 16px "Space Grotesk";margin:0 0 5px}.meta{font:11px "DM Mono";color:var(--dim);margin-bottom:10px}.card p,.card li{color:var(--muted);font-size:13px}.card p{margin:8px 0}.card ul{padding-left:18px;margin:8px 0}.tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:12px}.tag{font-size:10px;padding:3px 7px;border:1px solid #b5a0ff33;border-radius:4px;color:var(--violet);background:#b5a0ff0d}.skills{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}.skill h3{font:12px "DM Mono";color:var(--cyan);margin:0 0 9px}.skill p{color:var(--muted);font-size:13px;margin:0}.timeline{border-left:1px solid #b5a0ff55;margin-left:7px;padding-left:22px}.item{position:relative;margin:0 0 25px}.item:before{content:"";position:absolute;left:-27px;top:7px;width:8px;height:8px;border-radius:50%;background:var(--bg);border:2px solid var(--violet)}.item h3{font:600 16px "Space Grotesk";margin:0}.date{font-size:11px;color:var(--dim)}.item p,.item li{font-size:13px;color:var(--muted)}.item ul{padding-left:18px}.award{border:1px solid var(--line);background:var(--panel);padding:15px 17px;border-radius:6px;margin:0 0 10px}.award strong{font:600 14px "Space Grotesk"}.award p{font-size:12.5px;color:var(--muted);margin:5px 0 0}.award .rank{color:var(--green);font:11px "DM Mono";margin-bottom:5px}.bottom{display:grid;grid-template-columns:1fr 1fr;gap:28px}.bottom p{color:var(--muted);font-size:13px}footer{border-top:1px solid var(--line);padding:26px 0 42px;color:var(--dim);font:11px "DM Mono"}[data-lang="ro"]{display:none}body.ro [data-lang="en"]{display:none}body.ro [data-lang="ro"]{display:revert}body.ro div[data-lang="ro"],body.ro section[data-lang="ro"]{display:block}
+@media(max-width:700px){.navlinks{gap:11px}.navlinks a{font-size:10px}.hero{padding:65px 0 55px}.grid,.skills,.bottom{grid-template-columns:1fr}.wrap{width:min(var(--max),calc(100% - 30px))}.section{padding:35px 0}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap nav"><div class="logo">stefan<b>@</b>galati<span style="color:var(--dim)">:~$</span></div><nav class="navlinks"><a href="#about">about</a><a href="#experience">experience</a><a href="#projects">projects</a><a href="#skills">skills</a><a href="#awards">awards</a><button class="lang" id="langBtn" type="button">RO / EN</button></nav></div></header>
+<main class="wrap">
+<section class="hero">
+<div class="prompt">whoami</div>
+<h1>Stefan Ionita<span style="color:var(--cyan)">_</span></h1>
+<div class="role">Backend Developer <span>·</span> Cybersecurity Analyst <span>·</span> Computer Engineering Student</div>
+<div class="location mono">Galati, Romania</div>
+<p class="intro" data-lang="en">I am a fourth-year Computer Engineering student interested in backend engineering, secure application development and cybersecurity. I enjoy building practical software, improving system structure and exploring how applications and networks can be secured.</p>
+<p class="intro" data-lang="ro">Sunt student în anul IV în domeniul Calculatoare, interesat de dezvoltare backend, aplicații securizate și securitate cibernetică. Îmi place să construiesc aplicații practice, să îmbunătățesc structura sistemelor și să explorez metode de securizare a aplicațiilor și rețelelor.</p>
+<div class="actions"><a class="btn primary" href="mailto:stefan.ionita321@gmail.com">✉ stefan.ionita321@gmail.com</a><a class="btn" href="https://github.com/sk1fallRed25" target="_blank" rel="noopener">GitHub ↗</a><a class="btn" href="https://www.globalecr.ro/" target="_blank" rel="noopener">GLOBAL ECR ↗</a></div>
+</section>
+<section class="section" id="about">
+<div class="eyebrow">about.md</div>
+<p class="about" data-lang="en">Currently studying at “Dunărea de Jos” University of Galați. My main interests are backend development, databases, application security and network traffic analysis. I have practical experience with JavaScript, Node.js, React, PostgreSQL, Supabase, Linux and common security tools.</p>
+<p class="about" data-lang="ro">Studiez la Universitatea „Dunărea de Jos” din Galați. Principalele mele interese sunt dezvoltarea backend, bazele de date, securitatea aplicațiilor și analiza traficului de rețea. Am experiență practică cu JavaScript, Node.js, React, PostgreSQL, Supabase, Linux și instrumente uzuale de securitate.</p>
+</section>
+<section class="section" id="experience">
+<div class="eyebrow">experience.log</div>
+<div class="timeline">
+<div class="item"><h3 data-lang="en">Networking Technician (part-time) — GLOBAL CRIS ECR S.R.L.</h3><h3 data-lang="ro">Tehnician networking (part-time) — GLOBAL CRIS ECR S.R.L.</h3><div class="date">March 2026 – August 2026</div><ul data-lang="en"><li>Configured computers and printers.</li><li>Configured POS equipment and fiscal cash registers.</li></ul><ul data-lang="ro"><li>Configurarea calculatoarelor și imprimantelor.</li><li>Configurarea echipamentelor POS și a caselor de marcat fiscale.</li></ul></div>
+<div class="item"><h3>GLOBAL ECR — Web application</h3><div class="date">Team project · <a href="https://www.globalecr.ro/" target="_blank" rel="noopener">globalecr.ro</a></div><p data-lang="en">Collaborated with a teammate on a public website and application built with React and Node.js. Focused mainly on backend development, separated frontend and backend responsibilities in the project structure, and automated selected processes.</p><p data-lang="ro">Am colaborat cu un coleg la dezvoltarea unui website public și a unei aplicații folosind React și Node.js. M-am ocupat în principal de backend, am separat structura frontendului de backend și am automatizat anumite procese.</p></div>
+</div>
+</section>
+<section class="section" id="projects">
+<div class="eyebrow">selected-projects/</div>
+<div class="grid">
+<article class="card"><h3>Network-Guard</h3><div class="meta">Personal project · Ad blocking</div><p data-lang="en">An application focused on blocking unwanted advertisements.</p><p data-lang="ro">Aplicație axată pe blocarea reclamelor nedorite.</p><div class="tags"><span class="tag">Ad Blocking</span><span class="tag">Network tools</span></div></article>
+<article class="card"><h3 data-lang="en">Store Management Application</h3><h3 data-lang="ro">Aplicație de gestiune a magazinului</h3><div class="meta">Team project · Private</div><p data-lang="en">A private team project for store operations, including inventory, sales, suppliers, user roles, reporting and operation history. Built with a separated frontend/backend structure.</p><p data-lang="ro">Proiect privat realizat în echipă pentru gestionarea activităților unui magazin: stocuri, vânzări, furnizori, roluri de utilizatori, rapoarte și istoric operațional. Arhitectură cu frontend și backend separate.</p><div class="tags"><span class="tag">React</span><span class="tag">Node.js</span><span class="tag">PostgreSQL</span><span class="tag">Supabase</span><span class="tag">MVC</span></div></article>
+<article class="card"><h3 data-lang="en">AI Cyber Defence Challenge</h3><h3 data-lang="ro">AI Cyber Defence Challenge</h3><div class="meta">Team competition · 2026</div><p data-lang="en">Contributed to model training and result analysis for network-traffic classification, multi-class attack identification and open-set detection of unknown attacks.</p><p data-lang="ro">Am contribuit la antrenarea modelelor și analiza rezultatelor pentru clasificarea traficului de rețea, identificarea multi-clasă a atacurilor și detecția atacurilor necunoscute.</p><div class="tags"><span class="tag">Machine Learning</span><span class="tag">Network Traffic</span><span class="tag">Open-Set Detection</span></div></article>
+<article class="card"><h3 data-lang="en">Neural Network — Inventory Forecasting</h3><h3 data-lang="ro">Rețea neuronală — Predicția stocurilor</h3><div class="meta">Exploratory project</div><p data-lang="en">Exploratory project idea involving the use of AI for inventory forecasting.</p><p data-lang="ro">Idee de proiect exploratoriu privind utilizarea AI pentru predicția stocurilor.</p><div class="tags"><span class="tag">AI</span><span class="tag">Forecasting</span></div></article>
+</div>
+</section>
+<section class="section" id="skills">
+<div class="eyebrow">technical-stack.yml</div>
+<div class="skills">
+<div class="skill"><h3>programming & web</h3><p>JavaScript (intermediate), Node.js, React</p></div>
+<div class="skill"><h3>databases</h3><p>PostgreSQL, Supabase</p></div>
+<div class="skill"><h3>tools & systems</h3><p>Git, GitHub, Docker, Linux, Kali Linux</p></div>
+<div class="skill"><h3>cybersecurity</h3><p>CTFs, Wireshark, Nmap</p></div>
+<div class="skill"><h3>secure development</h3><p>Password hashing, input validation, rate limiting, SQL injection mitigation (project experience)</p></div>
+<div class="skill"><h3>languages</h3><p>Romanian (native), English (B2, self-assessed)</p></div>
+</div>
+</section>
+<section class="section" id="awards">
+<div class="eyebrow">competitions.log</div>
+<div class="award"><div class="rank">1ST PLACE · 2026</div><strong>AI Cyber Defence Challenge</strong><p data-lang="en">Team competition. Contributed to model training and result analysis in a challenge covering binary classification, 10-class traffic classification and open-set detection.</p><p data-lang="ro">Competiție pe echipe. Am contribuit la antrenarea modelelor și analiza rezultatelor într-o probă ce a inclus clasificare binară, clasificare a traficului în 10 clase și detecție open-set.</p></div>
+<div class="award"><div class="rank">1ST PLACE</div><strong>CRI Competition</strong><p data-lang="en">Developed an AI system to control a robotic arm that sorted colored cubes from positions on a 3×3 grid.</p><p data-lang="ro">Dezvoltarea unui sistem AI pentru controlul unui braț robotic care sorta cuburi colorate din poziții de pe o grilă 3×3.</p></div>
+<div class="award"><div class="rank">1ST HONOURABLE MENTION</div><strong>E.ON Energy Challenge</strong><p data-lang="en">Developed a hydrogen-based system.</p><p data-lang="ro">Dezvoltarea unui sistem bazat pe hidrogen.</p></div>
+<div class="award"><div class="rank">2ND HONOURABLE MENTION</div><strong>Severin Bumbaru Creativity Contest</strong><p data-lang="en">Developed an AI solution for plant recognition.</p><p data-lang="ro">Dezvoltarea unei soluții AI pentru recunoașterea plantelor.</p></div>
+<div class="award"><div class="rank">54TH PLACE · 2026</div><strong>CRONOS SECURITY</strong><p data-lang="en">Team cybersecurity competition; participated in a broad range of challenge categories.</p><p data-lang="ro">Competiție de securitate cibernetică pe echipe; participare la probe dintr-o gamă largă de categorii.</p></div>
+</section>
+<section class="section">
+<div class="eyebrow">education.yml · languages.yml</div>
+<div class="bottom">
+<div><h2 data-lang="en">Education</h2><h2 data-lang="ro">Educație</h2><p><strong>“Dunărea de Jos” University of Galați</strong><br><span data-lang="en">Computer Engineering studies · Year IV</span><span data-lang="ro">Studii în domeniul Calculatoare · Anul IV</span><br>2023–2027 (expected)</p><p><strong>Emil Racoviță Theoretical High School</strong><br>Galați, Romania</p></div>
+<div><h2 data-lang="en">Contact</h2><h2 data-lang="ro">Contact</h2><p><a href="mailto:stefan.ionita321@gmail.com">stefan.ionita321@gmail.com</a><br>0754308452<br><a href="https://github.com/sk1fallRed25">github.com/sk1fallRed25</a></p></div>
+</div>
+</section>
+<footer>© 2026 Stefan Ionita · Built with HTML & CSS · <a href="mailto:stefan.ionita321@gmail.com">Get in touch</a></footer>
+</main>
+<script>
+const btn=document.getElementById('langBtn');btn.addEventListener('click',()=>{document.body.classList.toggle('ro');document.documentElement.lang=document.body.classList.contains('ro')?'ro':'en';});
+</script>
+</body>
+</html>
