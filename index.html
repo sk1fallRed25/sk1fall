@@ -8,16 +8,16 @@
   <meta name="author" content="Stefan Ionita">
   <meta name="theme-color" content="#FAF9F6">
 
-  <!-- Open Graph -->
+  <!-- Open Graph Metadata -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Stefan Ionita | Backend Development &amp; Cybersecurity">
   <meta property="og:description" content="Computer Engineering student from Galați, Romania, focused on backend development, cybersecurity, networking, and practical software engineering projects.">
   <meta property="og:url" content="https://sk1fallred25.github.io/sk1fall/">
 
-  <!-- Minimal geometric SVG Favicon -->
+  <!-- Minimal Geometric SVG Favicon -->
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230F172A'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' fill='%23FAF9F6' font-family='system-ui,-apple-system,sans-serif' font-weight='700' font-size='26'%3ESI%3C/text%3E%3Ccircle cx='50' cy='16' r='5' fill='%231D4ED8'/%3E%3C/svg%3E">
 
-  <!-- Typography -->
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
@@ -27,9 +27,10 @@
 <body>
   <a class="skip-link" href="#main-content" data-i18n="a11y.skip">Skip to main content</a>
 
+  <!-- STICKY HEADER -->
   <header class="site-header">
     <div class="container header-inner">
-      <a href="#top" class="brand" aria-label="Home">
+      <a href="#top" class="brand" aria-label="Home" data-i18n-aria="a11y.homeLink">
         <span class="brand-mark" aria-hidden="true"></span>
         <span class="brand-name" data-i18n="person.name">Stefan Ionita</span>
       </a>
@@ -66,73 +67,146 @@
     <section class="hero-section">
       <div class="container hero-grid">
         <div class="hero-content">
-          <div class="status-pill">
-            <span class="status-dot" aria-hidden="true"></span>
-            <span data-i18n="hero.locationBadge">Galați, Romania · Fourth-Year Student</span>
+          <div class="hero-meta-row">
+            <span class="status-pill">
+              <span class="status-dot" aria-hidden="true"></span>
+              <span data-i18n="hero.statusBadge">Fourth-Year Computer Engineering Student</span>
+            </span>
+            <span class="location-chip">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span data-i18n="person.location">Galați, Romania</span>
+            </span>
           </div>
 
           <h1 class="hero-title" data-i18n="person.name">Stefan Ionita</h1>
 
           <p class="hero-headline" data-i18n="hero.headline">
-            Computer Engineering Student | Backend Development &amp; Cybersecurity
+            Backend Development &amp; Cybersecurity
           </p>
 
           <p class="hero-roles" data-i18n="hero.roles">
-            Backend Developer · Cybersecurity Analyst
+            Backend Developer · Cybersecurity Analyst · Computer Engineering (2023–2027)
           </p>
 
           <p class="hero-intro" data-i18n="hero.intro">
-            Computer Engineering student at “Dunărea de Jos” University of Galați focused on backend architecture, relational databases, Linux environments, networking equipment, and applied cybersecurity. Experienced through practical IT infrastructure work, collaborative web development, and competitive AI and security challenges.
+            Fourth-year student at “Dunărea de Jos” University of Galați building practical software systems with a focus on backend architecture, relational databases, Linux environments, networking infrastructure, and applied cybersecurity.
           </p>
 
           <div class="hero-actions">
-            <a href="#projects" class="btn btn-primary" data-i18n="hero.ctaProjects">View Projects</a>
-            <a href="#contact" class="btn btn-secondary" data-i18n="hero.ctaContact">Contact Me</a>
+            <a href="#projects" class="btn btn-primary" data-i18n="hero.ctaProjects">Explore Projects</a>
+            <a href="#contact" class="btn btn-secondary" data-i18n="hero.ctaContact">Get in Touch</a>
             <a href="https://github.com/sk1fallRed25" class="btn btn-ghost" target="_blank" rel="noopener noreferrer">
-              <span data-i18n="hero.ctaGithub">GitHub Profile</span>
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.8 1.19 1.83 1.19 3.09 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.14 0 1.55-.01 2.8-.01 3.18 0 .31.21.68.8.56A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+              <span data-i18n="hero.ctaGithub">GitHub</span>
               <span aria-hidden="true">↗</span>
             </a>
           </div>
+
+          <!-- CV PDF DOWNLOAD PLACEHOLDER BAR -->
+          <div class="cv-download-box" aria-label="Curriculum Vitae PDF Downloads" data-i18n-aria="a11y.cvBox">
+            <div class="cv-download-header">
+              <span class="cv-download-label" data-i18n="hero.cvSectionTitle">Curriculum Vitae (PDF)</span>
+              <span class="cv-placeholder-tag" data-i18n="hero.cvPendingBadge">Awaiting PDF Upload</span>
+            </div>
+            <div class="cv-download-actions">
+              <button type="button" class="cv-btn" data-cv-file="Stefan_Ionita_CV_EN.pdf" aria-describedby="cv-status-note">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><polyline points="9 15 12 18 15 15"/></svg>
+                <span data-i18n="hero.cvEnBtn">Download CV — English PDF</span>
+              </button>
+              <button type="button" class="cv-btn" data-cv-file="Stefan_Ionita_CV_RO.pdf" aria-describedby="cv-status-note">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><polyline points="9 15 12 18 15 15"/></svg>
+                <span data-i18n="hero.cvRoBtn">Descarcă CV — Romanian PDF</span>
+              </button>
+            </div>
+            <p class="cv-status-note" id="cv-status-note" role="status" aria-live="polite" data-i18n="hero.cvNote">
+              PDF placeholders configured for Stefan_Ionita_CV_EN.pdf and Stefan_Ionita_CV_RO.pdf.
+            </p>
+          </div>
         </div>
 
-        <!-- SIGNATURE EDITORIAL POSTER CARD -->
-        <aside class="hero-poster" aria-label="Editorial statement poster" data-i18n-aria="a11y.heroPoster">
-          <p class="poster-eyebrow" data-i18n="poster.eyebrow">CURRENTLY / 2026</p>
+        <!-- RIGHT COLUMN: SIGNATURE EDITORIAL POSTER + STRUCTURED PROFILE SNAPSHOT -->
+        <div class="hero-aside-stack">
+          <aside class="hero-poster" aria-label="Editorial statement poster" data-i18n-aria="a11y.heroPoster">
+            <p class="poster-eyebrow" data-i18n="poster.eyebrow">CURRENTLY / 2026</p>
 
-          <p class="poster-statement" data-i18n-html="poster.primary">
-            Building things.<br>Breaking things<br>securely.
-          </p>
+            <p class="poster-statement" data-i18n-html="poster.primary">
+              Building things.<br>Breaking things<br>securely.
+            </p>
 
-          <p class="poster-statement poster-statement-secondary" data-i18n-html="poster.secondary">
-            Construiesc.<br>Testez.<br>Securizez.
-          </p>
+            <p class="poster-statement poster-statement-secondary" data-i18n-html="poster.secondary">
+              Construiesc.<br>Testez.<br>Securizez.
+            </p>
 
-          <p class="poster-caption" data-i18n="poster.caption">
-            Interested in reliable backend systems and practical cybersecurity.
-          </p>
-        </aside>
+            <p class="poster-caption" data-i18n="poster.caption">
+              Interested in reliable backend systems and practical cybersecurity.
+            </p>
+          </aside>
+
+          <aside class="profile-snapshot" aria-label="Profile summary" data-i18n-aria="a11y.profileSnapshot">
+            <div class="snapshot-header">
+              <span class="mono-tag" data-i18n="snapshot.tag">PROFILE SNAPSHOT</span>
+              <span class="snapshot-year">2023 – 2027</span>
+            </div>
+            <dl class="snapshot-grid">
+              <div class="snapshot-item">
+                <dt data-i18n="snapshot.focusLabel">Core Tracks</dt>
+                <dd data-i18n="snapshot.focusValue">Backend Engineering &amp; Security</dd>
+              </div>
+              <div class="snapshot-item">
+                <dt data-i18n="snapshot.eduLabel">University</dt>
+                <dd data-i18n="snapshot.eduValue">UGAL · ACIEE (Computers)</dd>
+              </div>
+              <div class="snapshot-item">
+                <dt data-i18n="snapshot.stackLabel">Primary Stack</dt>
+                <dd>Node.js · React · PostgreSQL · Linux</dd>
+              </div>
+              <div class="snapshot-item">
+                <dt data-i18n="snapshot.awardsLabel">Competitions</dt>
+                <dd data-i18n="snapshot.awardsValue">2× 1st Place (AI Cyber Defence &amp; CRI)</dd>
+              </div>
+            </dl>
+          </aside>
+        </div>
       </div>
     </section>
 
-    <!-- 01. ABOUT -->
+    <!-- 01. ABOUT ME -->
     <section id="about" class="section">
       <div class="container">
         <div class="section-header">
           <span class="section-index">01</span>
           <div>
             <h2 class="section-title" data-i18n="about.title">About Me</h2>
-            <p class="section-subtitle" data-i18n="about.subtitle">Engineering mindset grounded in practical systems and continuous learning.</p>
+            <p class="section-subtitle" data-i18n="about.subtitle">Practical systems background combined with structured software engineering and security.</p>
           </div>
         </div>
 
-        <div class="about-grid">
+        <div class="about-layout">
           <div class="about-card">
             <p class="about-lead" data-i18n="about.p1">
-              I am a fourth-year Computer Engineering student at “Dunărea de Jos” University of Galați (Faculty of Automation, Computers, Electrical Engineering and Electronics), building a career toward backend software engineering and cybersecurity.
+              I am a fourth-year Computer Engineering student at “Dunărea de Jos” University of Galați (Faculty of Automation, Computers, Electrical Engineering and Electronics), pursuing opportunities in backend development, software engineering, and cybersecurity.
             </p>
             <p class="about-body" data-i18n="about.p2">
-              My hands-on background spans configuring networking and POS hardware in real operational settings, collaborating on full-stack web applications with separated frontend and backend layers, and applying security principles such as input validation, password hashing, rate limiting, and network traffic analysis. Alongside coursework and software projects, I actively compete in team hackathons and Capture The Flag events involving AI-driven detection, automation, and defensive security.
+              My experience combines hands-on IT and networking equipment configuration with collaborative web development using React, Node.js, and PostgreSQL. Across academic and personal projects, I focus on clean separation between frontend and backend services, relational data integrity, and defensive security fundamentals—including input validation, password hashing, rate limiting, and SQL injection mitigation. Beyond coursework, I regularly participate in team hackathons and Capture The Flag competitions involving network traffic analysis, applied AI, and automation.
             </p>
+          </div>
+
+          <div class="about-pillars">
+            <div class="pillar-card">
+              <span class="pillar-num">I</span>
+              <h3 class="pillar-title" data-i18n="about.pillar1Title">Backend &amp; Architecture</h3>
+              <p class="pillar-desc" data-i18n="about.pillar1Desc">Structuring REST-oriented APIs, MVC layers, authentication flows, and relational database schemas.</p>
+            </div>
+            <div class="pillar-card">
+              <span class="pillar-num">II</span>
+              <h3 class="pillar-title" data-i18n="about.pillar2Title">Applied Cybersecurity</h3>
+              <p class="pillar-desc" data-i18n="about.pillar2Desc">Hands-on CTF problem solving, packet inspection with Wireshark/Nmap, and defensive coding practices.</p>
+            </div>
+            <div class="pillar-card">
+              <span class="pillar-num">III</span>
+              <h3 class="pillar-title" data-i18n="about.pillar3Title">Infrastructure &amp; AI</h3>
+              <p class="pillar-desc" data-i18n="about.pillar3Desc">Linux environments, hardware/POS field configuration, and team-based ML/AI engineering challenges.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -145,16 +219,19 @@
           <span class="section-index">02</span>
           <div>
             <h2 class="section-title" data-i18n="experience.title">Experience</h2>
-            <p class="section-subtitle" data-i18n="experience.subtitle">Practical technical operations and collaborative web application development.</p>
+            <p class="section-subtitle" data-i18n="experience.subtitle">Distinguishing official technical field operations from collaborative web development.</p>
           </div>
         </div>
 
-        <div class="experience-card">
-          <div class="experience-top">
+        <div class="experience-wrapper">
+          <div class="experience-banner">
             <div>
-              <span class="meta-badge" data-i18n="experience.period">March 2026 – August 2026 · Part-time</span>
+              <div class="exp-meta-line">
+                <span class="meta-badge" data-i18n="experience.period">March 2026 – August 2026</span>
+                <span class="employment-pill" data-i18n="experience.empType">Part-time</span>
+              </div>
               <h3 class="company-name">GLOBAL CRIS ECR S.R.L.</h3>
-              <p class="role-title" data-i18n="experience.role">Networking Technician</p>
+              <p class="role-title" data-i18n="experience.role">Official Position: Networking Technician</p>
             </div>
             <a href="https://www.globalecr.ro/" class="external-pill" target="_blank" rel="noopener noreferrer">
               <span>globalecr.ro</span>
@@ -162,32 +239,44 @@
             </a>
           </div>
 
-          <div class="experience-columns">
-            <div class="exp-block">
-              <h4 class="exp-block-title" data-i18n="experience.infraTitle">IT Infrastructure &amp; Field Operations</h4>
-              <ul class="clean-list">
-                <li data-i18n="experience.infra1">Configured workstation computers and office/commercial printers.</li>
-                <li data-i18n="experience.infra2">Configured and prepared Point-of-Sale (POS) hardware systems.</li>
-                <li data-i18n="experience.infra3">Configured fiscal cash registers for retail deployment.</li>
-                <li data-i18n="experience.infra4">Assisted with on-site technical equipment setup and troubleshooting.</li>
-              </ul>
-            </div>
-
-            <div class="exp-block exp-block-highlight">
-              <div class="exp-block-header">
-                <h4 class="exp-block-title" data-i18n="experience.webTitle">Web Application Collaboration</h4>
-                <span class="subtle-tag" data-i18n="experience.webBadge">2-Person Collaboration</span>
+          <div class="experience-tracks">
+            <!-- Track 1: Official Role -->
+            <article class="track-card">
+              <div class="track-header">
+                <span class="track-step" data-i18n="experience.track1Label">ACTIVITY 01 · OFFICIAL ROLE</span>
+                <h4 class="track-title" data-i18n="experience.infraTitle">Networking Technician &amp; Hardware Operations</h4>
               </div>
-              <p class="exp-block-desc" data-i18n="experience.webDesc">
-                Collaborated alongside one colleague on the company’s public website and web application (globalecr.ro). Focused primarily on backend development, establishing a clean separation between frontend and backend layers and automating selected internal workflows.
+              <p class="track-summary" data-i18n="experience.infraSummary">
+                Performed hands-on configuration, preparation, and troubleshooting of workstation, networking, and retail fiscal hardware.
+              </p>
+              <ul class="clean-list">
+                <li data-i18n="experience.infra1">Configured desktop computers and office/commercial printers.</li>
+                <li data-i18n="experience.infra2">Configured and prepared Point-of-Sale (POS) hardware equipment.</li>
+                <li data-i18n="experience.infra3">Configured fiscal cash registers for commercial deployment.</li>
+                <li data-i18n="experience.infra4">Assisted with technical equipment installation and on-site troubleshooting.</li>
+              </ul>
+            </article>
+
+            <!-- Track 2: Collaborative Project -->
+            <article class="track-card track-card-accent">
+              <div class="track-header">
+                <div class="track-header-top">
+                  <span class="track-step track-step-blue" data-i18n="experience.track2Label">ACTIVITY 02 · COLLABORATIVE PROJECT</span>
+                  <span class="subtle-tag" data-i18n="experience.webBadge">2-Person Team</span>
+                </div>
+                <h4 class="track-title" data-i18n="experience.webTitle">Company Public Website &amp; Web Application</h4>
+              </div>
+              <p class="track-summary" data-i18n="experience.webDesc">
+                Collaborated alongside one colleague on building and structuring the company’s public web presence and application (globalecr.ro). Focused primarily on backend implementation, establishing clear separation between frontend and backend layers, and automating selected operational processes.
               </p>
               <div class="tag-row">
                 <span class="tech-tag">React</span>
                 <span class="tech-tag">Node.js</span>
-                <span class="tech-tag" data-i18n="experience.tagBackend">Backend Architecture</span>
+                <span class="tech-tag" data-i18n="experience.tagBackend">Backend-Focused Contribution</span>
+                <span class="tech-tag" data-i18n="experience.tagSeparation">Frontend / Backend Separation</span>
                 <span class="tech-tag" data-i18n="experience.tagAutomation">Process Automation</span>
               </div>
-            </div>
+            </article>
           </div>
         </div>
       </div>
@@ -200,50 +289,147 @@
           <span class="section-index">03</span>
           <div>
             <h2 class="section-title" data-i18n="projects.title">Projects</h2>
-            <p class="section-subtitle" data-i18n="projects.subtitle">Selected private software systems and exploratory engineering work.</p>
+            <p class="section-subtitle" data-i18n="projects.subtitle">Featured architecture case study alongside private and exploratory engineering repositories.</p>
           </div>
         </div>
 
-        <div class="projects-grid">
-          <!-- Project 1: Store Management Application -->
-          <article class="project-card project-card-featured">
-            <div class="project-meta">
-              <span class="project-type" data-i18n="projects.p1Type">Team Project · Near Completion</span>
-              <span class="privacy-badge">
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-                <span data-i18n="projects.privateBadge">Private Repository</span>
-              </span>
-            </div>
-
-            <h3 class="project-title" data-i18n="projects.p1Title">Store Management Application</h3>
-
-            <p class="project-desc" data-i18n="projects.p1Desc">
-              Collaborative full-stack retail management platform structured around an MVC pattern with separated frontend and backend services. Designed to support daily commercial workflows with role-based access control and auditability.
-            </p>
-
-            <ul class="project-features">
-              <li data-i18n="projects.p1F1">Product catalog, stock levels, and supplier management</li>
-              <li data-i18n="projects.p1F2">Sales processing, invoicing, and operational reports</li>
-              <li data-i18n="projects.p1F3">User &amp; employee accounts, authentication, and granular permissions</li>
-              <li data-i18n="projects.p1F4">Complete operation history logging for traceability</li>
-            </ul>
-
-            <div class="project-footer">
-              <div class="tag-row">
-                <span class="tech-tag">React</span>
-                <span class="tech-tag">Node.js</span>
-                <span class="tech-tag">PostgreSQL</span>
-                <span class="tech-tag">Supabase</span>
-                <span class="tech-tag">MVC</span>
+        <!-- PRIMARY FEATURED PROJECT: STORE MANAGEMENT APPLICATION -->
+        <article class="featured-project">
+          <div class="featured-top">
+            <div>
+              <div class="project-badges-row">
+                <span class="featured-pill" data-i18n="projects.featuredBadge">Featured Case Study</span>
+                <span class="project-type" data-i18n="projects.p1Type">Team Project · Near Completion</span>
+                <span class="privacy-badge">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                  <span data-i18n="projects.privateBadge">Private Repository</span>
+                </span>
               </div>
-              <p class="privacy-note" data-i18n="projects.p1Privacy">Source code and internal schema remain private.</p>
+              <h3 class="featured-title" data-i18n="projects.p1Title">Store Management Application</h3>
             </div>
-          </article>
+            <div class="tag-row">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">PostgreSQL</span>
+              <span class="tech-tag">Supabase</span>
+              <span class="tech-tag">MVC</span>
+            </div>
+          </div>
 
+          <!-- Problem & Scope Context -->
+          <div class="featured-context-grid">
+            <div class="context-block">
+              <h4 class="context-heading" data-i18n="projects.p1ProblemTitle">Engineering &amp; Business Problem Addressed</h4>
+              <p class="context-text" data-i18n="projects.p1ProblemDesc">
+                Small and medium retail operations require synchronized tracking across inventory stock, supplier deliveries, point-of-sale invoicing, and staff accountability. This full-stack platform centralizes daily commercial workflows into a structured, role-restricted system with full operation traceability.
+              </p>
+            </div>
+            <div class="context-block">
+              <h4 class="context-heading" data-i18n="projects.p1ScopeTitle">Team Scope &amp; Contribution Boundary</h4>
+              <p class="context-text" data-i18n="projects.p1ScopeDesc">
+                Developed collaboratively as a team project using a decoupled React frontend and Node.js MVC backend connected to PostgreSQL/Supabase. Source code, database schemas, and internal business metrics remain private.
+              </p>
+            </div>
+          </div>
+
+          <!-- VISUAL SYSTEM ARCHITECTURE DIAGRAM -->
+          <div class="arch-diagram-box" role="region" aria-label="Store Management Application System Architecture" data-i18n-aria="a11y.archDiagram">
+            <div class="arch-header">
+              <span class="mono-tag" data-i18n="arch.label">SYSTEM ARCHITECTURE · SEPARATED FRONTEND &amp; BACKEND (MVC)</span>
+              <span class="arch-hint" data-i18n="arch.hint">High-Level Logical Flow</span>
+            </div>
+
+            <div class="arch-flow">
+              <!-- Tier 1: Client Layer -->
+              <div class="arch-tier">
+                <span class="arch-tier-tag" data-i18n="arch.tier1Tag">01 · CLIENT LAYER</span>
+                <h5 class="arch-tier-title">React SPA</h5>
+                <ul class="arch-tier-list">
+                  <li data-i18n="arch.t1Item1">Role-aware operator views</li>
+                  <li data-i18n="arch.t1Item2">Inventory &amp; POS workflows</li>
+                  <li data-i18n="arch.t1Item3">Reports &amp; audit dashboards</li>
+                </ul>
+              </div>
+
+              <!-- Connector 1 -->
+              <div class="arch-connector" aria-hidden="true">
+                <span class="connector-label">REST / JSON</span>
+                <div class="connector-line"></div>
+              </div>
+
+              <!-- Tier 2: Backend Application Layer -->
+              <div class="arch-tier arch-tier-primary">
+                <span class="arch-tier-tag" data-i18n="arch.tier2Tag">02 · BACKEND SERVICE (MVC)</span>
+                <h5 class="arch-tier-title">Node.js API</h5>
+                <ul class="arch-tier-list">
+                  <li data-i18n="arch.t2Item1">Authentication &amp; RBAC permissions</li>
+                  <li data-i18n="arch.t2Item2">Controllers &amp; business validation</li>
+                  <li data-i18n="arch.t2Item3">Operation history logging middleware</li>
+                </ul>
+              </div>
+
+              <!-- Connector 2 -->
+              <div class="arch-connector" aria-hidden="true">
+                <span class="connector-label">SQL / Auth</span>
+                <div class="connector-line"></div>
+              </div>
+
+              <!-- Tier 3: Data & Persistence Layer -->
+              <div class="arch-tier">
+                <span class="arch-tier-tag" data-i18n="arch.tier3Tag">03 · DATA &amp; PERSISTENCE</span>
+                <h5 class="arch-tier-title">PostgreSQL + Supabase</h5>
+                <ul class="arch-tier-list">
+                  <li data-i18n="arch.t3Item1">Relational stock &amp; invoice records</li>
+                  <li data-i18n="arch.t3Item2">Supplier &amp; user account tables</li>
+                  <li data-i18n="arch.t3Item3">Immutable activity audit trail</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Core Functional Modules Grid -->
+          <div class="modules-section">
+            <h4 class="context-heading" data-i18n="projects.p1ModulesTitle">Core System Modules</h4>
+            <div class="modules-grid">
+              <div class="module-item">
+                <strong data-i18n="projects.m1Title">Inventory &amp; Products</strong>
+                <span data-i18n="projects.m1Desc">Product catalog management, stock quantities, and supplier records.</span>
+              </div>
+              <div class="module-item">
+                <strong data-i18n="projects.m2Title">Sales &amp; Invoicing</strong>
+                <span data-i18n="projects.m2Desc">Transaction checkout processing, invoice generation, and sales statistics.</span>
+              </div>
+              <div class="module-item">
+                <strong data-i18n="projects.m3Title">Auth, Roles &amp; Permissions</strong>
+                <span data-i18n="projects.m3Desc">User/employee accounts with authentication and role-based authorization.</span>
+              </div>
+              <div class="module-item">
+                <strong data-i18n="projects.m4Title">Reports &amp; Audit History</strong>
+                <span data-i18n="projects.m4Desc">Operational reporting and chronological logging of user actions.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Documented Visual Preview Placeholder -->
+          <div class="preview-placeholder">
+            <div class="preview-placeholder-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+            </div>
+            <div>
+              <strong class="preview-placeholder-title" data-i18n="projects.previewTitle">Sanitized UI Preview — Pending Screenshot</strong>
+              <p class="preview-placeholder-desc" data-i18n="projects.previewDesc">
+                Private project interface withheld to protect business data. Space reserved for a sanitized screenshot using mock/dummy records.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <!-- SECONDARY PRIVATE / EXPLORATORY PROJECTS -->
+        <div class="secondary-projects-grid">
           <!-- Project 2: Network-Guard -->
           <article class="project-card">
             <div class="project-meta">
-              <span class="project-type" data-i18n="projects.p2Type">Personal Project · In Progress</span>
+              <span class="project-type" data-i18n="projects.p2Type">Personal Project</span>
               <span class="privacy-badge">
                 <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
                 <span data-i18n="projects.privateBadge">Private Repository</span>
@@ -253,13 +439,13 @@
             <h3 class="project-title">Network-Guard</h3>
 
             <p class="project-desc" data-i18n="projects.p2Desc">
-              A private software project focused on filtering and blocking unwanted advertisements. Developed as a practical exercise in traffic control and network-level filtering concepts.
+              A private software project focused on blocking unwanted advertisements. Built to explore traffic filtering concepts and cleaner browsing behavior.
             </p>
 
             <div class="project-footer">
               <div class="tag-row">
                 <span class="tech-tag" data-i18n="projects.p2Tag1">Ad Blocking</span>
-                <span class="tech-tag" data-i18n="projects.p2Tag2">Networking</span>
+                <span class="tech-tag" data-i18n="projects.p2Tag2">Networking Concepts</span>
               </div>
             </div>
           </article>
@@ -267,7 +453,7 @@
           <!-- Project 3: ReteaNeuronala -->
           <article class="project-card">
             <div class="project-meta">
-              <span class="project-type" data-i18n="projects.p3Type">Exploratory Concept</span>
+              <span class="project-type" data-i18n="projects.p3Type">Early-Stage AI/ML Exploration</span>
               <span class="privacy-badge">
                 <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
                 <span data-i18n="projects.privateBadge">Private Repository</span>
@@ -277,24 +463,25 @@
             <h3 class="project-title">ReteaNeuronala</h3>
 
             <p class="project-desc" data-i18n="projects.p3Desc">
-              An exploratory AI/ML project investigating neural-network approaches for inventory demand prediction. Created as an early-stage research prototype to study forecasting workflows.
+              An exploratory AI/ML concept investigating neural-network methods for inventory demand prediction. Initiated as an experimental study into forecasting workflows rather than a production model.
             </p>
 
             <div class="project-footer">
               <div class="tag-row">
-                <span class="tech-tag" data-i18n="projects.p3Tag1">AI / ML</span>
-                <span class="tech-tag" data-i18n="projects.p3Tag2">Inventory Forecasting</span>
+                <span class="tech-tag" data-i18n="projects.p3Tag1">Exploratory AI / ML</span>
+                <span class="tech-tag" data-i18n="projects.p3Tag2">Inventory Forecasting Concept</span>
               </div>
             </div>
           </article>
         </div>
 
+        <!-- Public GitHub Context Bar -->
         <div class="public-repos-bar">
           <p data-i18n="projects.publicNote">
-            Additional public coursework and introductory repositories (such as Spanzuratoarea and ProiectPOO) are available on GitHub.
+            Public GitHub profile also includes introductory coursework repositories such as Spanzuratoarea (JavaScript hangman game) and ProiectPOO.
           </p>
           <a href="https://github.com/sk1fallRed25" class="text-link" target="_blank" rel="noopener noreferrer">
-            <span data-i18n="projects.publicLink">github.com/sk1fallRed25</span>
+            <span>github.com/sk1fallRed25</span>
             <span aria-hidden="true">↗</span>
           </a>
         </div>
@@ -308,184 +495,185 @@
           <span class="section-index">04</span>
           <div>
             <h2 class="section-title" data-i18n="skills.title">Technical Skills</h2>
-            <p class="section-subtitle" data-i18n="skills.subtitle">Core technologies and security practices applied across academic and team projects.</p>
+            <p class="section-subtitle" data-i18n="skills.subtitle">Technologies and defensive practices mapped directly to projects, coursework, and competitions.</p>
           </div>
         </div>
 
         <div class="skills-grid">
+          <!-- Category 1: Programming -->
           <div class="skill-card">
             <div class="skill-card-head">
               <h3 class="skill-category" data-i18n="skills.cat1Title">Programming</h3>
               <span class="proficiency-pill" data-i18n="skills.levelIntermediate">Intermediate</span>
             </div>
-            <p class="skill-context" data-i18n="skills.cat1Desc">Building modular client and server applications with clean separation of concerns.</p>
-            <div class="tag-row">
-              <span class="tech-tag">JavaScript (Intermediate)</span>
-              <span class="tech-tag">Node.js</span>
-              <span class="tech-tag">React</span>
-            </div>
+            <ul class="skill-evidence-list">
+              <li>
+                <strong>JavaScript (Intermediate)</strong> — <span data-i18n="skills.evJs">Core language for web applications, API logic, and browser exercises.</span>
+              </li>
+              <li>
+                <strong>Node.js</strong> — <span data-i18n="skills.evNode">Collaborative backend development for globalecr.ro and Store Management Application.</span>
+              </li>
+              <li>
+                <strong>React</strong> — <span data-i18n="skills.evReact">Component-based frontend interfaces separated from backend services.</span>
+              </li>
+            </ul>
           </div>
 
+          <!-- Category 2: Backend & Databases -->
           <div class="skill-card">
             <div class="skill-card-head">
               <h3 class="skill-category" data-i18n="skills.cat2Title">Backend &amp; Databases</h3>
             </div>
-            <p class="skill-context" data-i18n="skills.cat2Desc">Designing relational schemas, REST-oriented APIs, and structured MVC services.</p>
-            <div class="tag-row">
-              <span class="tech-tag">PostgreSQL</span>
-              <span class="tech-tag">Supabase</span>
-              <span class="tech-tag" data-i18n="skills.tagBackendArch">Backend Architecture</span>
-              <span class="tech-tag" data-i18n="skills.tagRest">REST-Oriented APIs</span>
-              <span class="tech-tag" data-i18n="skills.tagMvc">MVC Architecture</span>
-            </div>
+            <ul class="skill-evidence-list">
+              <li>
+                <strong>PostgreSQL &amp; Supabase</strong> — <span data-i18n="skills.evPg">Relational data modeling and persistence in the Store Management Application.</span>
+              </li>
+              <li>
+                <strong>MVC &amp; Backend Architecture</strong> — <span data-i18n="skills.evMvc">Structured routing, controllers, and clean frontend/backend separation.</span>
+              </li>
+              <li>
+                <strong>REST-Oriented Development</strong> — <span data-i18n="skills.evRest">Designing structured HTTP endpoints for client-server communication.</span>
+              </li>
+            </ul>
           </div>
 
+          <!-- Category 3: Tools & Development -->
           <div class="skill-card">
             <div class="skill-card-head">
               <h3 class="skill-category" data-i18n="skills.cat3Title">Tools &amp; Development</h3>
             </div>
-            <p class="skill-context" data-i18n="skills.cat3Desc">Version control, containerized workflows, and Linux-based development environments.</p>
-            <div class="tag-row">
-              <span class="tech-tag">Git</span>
-              <span class="tech-tag">GitHub</span>
-              <span class="tech-tag">Docker</span>
-              <span class="tech-tag">Linux</span>
-            </div>
+            <ul class="skill-evidence-list">
+              <li>
+                <strong>Git &amp; GitHub</strong> — <span data-i18n="skills.evGit">Collaborative version control across team software and hackathon repositories.</span>
+              </li>
+              <li>
+                <strong>Docker</strong> — <span data-i18n="skills.evDocker">Containerized local environments for backend and database workflows.</span>
+              </li>
+              <li>
+                <strong>Linux</strong> — <span data-i18n="skills.evLinux">Daily command-line usage, server environments, and development tooling.</span>
+              </li>
+            </ul>
           </div>
 
+          <!-- Category 4: Cybersecurity & Networking -->
           <div class="skill-card">
             <div class="skill-card-head">
               <h3 class="skill-category" data-i18n="skills.cat4Title">Cybersecurity &amp; Networking</h3>
-              <span class="proficiency-pill" data-i18n="skills.projectExp">Project Experience</span>
+              <span class="proficiency-pill" data-i18n="skills.projectExp">Academic &amp; Project Practice</span>
             </div>
-            <p class="skill-context" data-i18n="skills.cat4Desc">Applied defensive coding practices in personal/academic apps alongside CTF and packet analysis tools.</p>
-            <div class="tag-row">
-              <span class="tech-tag">Kali Linux</span>
-              <span class="tech-tag">CTF Challenges</span>
-              <span class="tech-tag">Wireshark</span>
-              <span class="tech-tag">Nmap</span>
-              <span class="tech-tag" data-i18n="skills.tagTraffic">Network Traffic Analysis</span>
-              <span class="tech-tag" data-i18n="skills.tagValidation">Input Validation</span>
-              <span class="tech-tag" data-i18n="skills.tagHashing">Password Hashing</span>
-              <span class="tech-tag" data-i18n="skills.tagRateLimit">Rate Limiting</span>
-              <span class="tech-tag" data-i18n="skills.tagSqli">SQL Injection Mitigation</span>
-            </div>
+            <ul class="skill-evidence-list">
+              <li>
+                <strong>Wireshark, Nmap &amp; Kali Linux</strong> — <span data-i18n="skills.evNetTools">Packet inspection, network reconnaissance, and CTF competition challenges.</span>
+              </li>
+              <li>
+                <strong data-i18n="skills.evTrafficLabel">Network Traffic Analysis</strong> — <span data-i18n="skills.evTraffic">Feature exploration and attack classification in AI Cyber Defence Challenge 2026.</span>
+              </li>
+              <li>
+                <strong data-i18n="skills.evAppSecLabel">Defensive Web Practices</strong> — <span data-i18n="skills.evAppSec">Input validation, password hashing, rate limiting, and SQL injection mitigation applied in personal/academic projects.</span>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- 05. ACHIEVEMENTS -->
+    <!-- 05. COMPETITIONS & ACHIEVEMENTS -->
     <section id="achievements" class="section">
       <div class="container">
         <div class="section-header">
           <span class="section-index">05</span>
           <div>
             <h2 class="section-title" data-i18n="achievements.title">Competitions &amp; Achievements</h2>
-            <p class="section-subtitle" data-i18n="achievements.subtitle">Team results in cybersecurity, applied artificial intelligence, robotics, and engineering challenges.</p>
+            <p class="section-subtitle" data-i18n="achievements.subtitle">First-place results and national distinctions in cybersecurity, AI, robotics, and energy systems.</p>
           </div>
         </div>
 
-        <div class="achievements-list">
+        <!-- TOP TIER: TWO 1ST-PLACE ACHIEVEMENTS -->
+        <div class="achievements-top-grid">
           <!-- 1st Place: AI Cyber Defence Challenge 2026 -->
-          <article class="achievement-card achievement-first">
-            <div class="rank-badge rank-gold" aria-label="1st Place" data-i18n-aria="achievements.rank1Aria">
-              <span class="rank-num">1st</span>
-              <span class="rank-label" data-i18n="achievements.placeLabel">PLACE</span>
+          <article class="achievement-highlight-card">
+            <div class="highlight-card-header">
+              <span class="first-place-badge" data-i18n="achievements.firstPlaceTag">1st Place · Team Competition</span>
+              <span class="highlight-year">2026</span>
             </div>
-            <div class="achievement-body">
-              <div class="achievement-top">
-                <h3 class="achievement-title">AI Cyber Defence Challenge 2026</h3>
-                <span class="subtle-tag" data-i18n="achievements.teamComp">Team Competition</span>
-              </div>
-              <p class="achievement-desc" data-i18n="achievements.a1Desc">
-                Contributed to machine learning model training and result analysis for network traffic security tasks, covering binary attack detection, 10-class attack classification, and open-set identification of previously unseen threats.
-              </p>
-              <div class="achievement-links">
-                <a href="https://hackathon.osace.ro/" class="text-link" target="_blank" rel="noopener noreferrer">
-                  <span data-i18n="achievements.a1Site">Competition Website</span>
-                  <span aria-hidden="true">↗</span>
-                </a>
-                <a href="https://hackathon.osace.ro/guide" class="text-link" target="_blank" rel="noopener noreferrer">
-                  <span data-i18n="achievements.a1Guide">Technical Guide</span>
-                  <span aria-hidden="true">↗</span>
-                </a>
-              </div>
+            <h3 class="highlight-title">AI Cyber Defence Challenge 2026</h3>
+            <p class="highlight-desc" data-i18n="achievements.a1Desc">
+              Contributed to machine learning model training and result analysis in a team competition focused on AI-driven network traffic security across three detection tasks:
+            </p>
+            <div class="task-pills">
+              <span class="task-pill" data-i18n="achievements.a1Task1">Binary Classification</span>
+              <span class="task-pill" data-i18n="achievements.a1Task2">10-Class Attack Classification</span>
+              <span class="task-pill" data-i18n="achievements.a1Task3">Open-Set Unknown Attack Detection</span>
+            </div>
+            <div class="achievement-links">
+              <a href="https://hackathon.osace.ro/" class="text-link" target="_blank" rel="noopener noreferrer">
+                <span data-i18n="achievements.a1Site">Official Competition</span>
+                <span aria-hidden="true">↗</span>
+              </a>
+              <a href="https://hackathon.osace.ro/guide" class="text-link" target="_blank" rel="noopener noreferrer">
+                <span data-i18n="achievements.a1Guide">Challenge Guide</span>
+                <span aria-hidden="true">↗</span>
+              </a>
             </div>
           </article>
 
           <!-- 1st Place: CRI Competition -->
-          <article class="achievement-card achievement-first">
-            <div class="rank-badge rank-gold" aria-label="1st Place" data-i18n-aria="achievements.rank1Aria">
-              <span class="rank-num">1st</span>
-              <span class="rank-label" data-i18n="achievements.placeLabel">PLACE</span>
+          <article class="achievement-highlight-card">
+            <div class="highlight-card-header">
+              <span class="first-place-badge" data-i18n="achievements.firstPlaceTag2">1st Place · Robotics &amp; AI</span>
+              <span class="highlight-year">2026</span>
             </div>
-            <div class="achievement-body">
-              <div class="achievement-top">
-                <h3 class="achievement-title" data-i18n="achievements.a2Title">CRI Competition</h3>
-                <span class="subtle-tag" data-i18n="achievements.roboticsTag">AI &amp; Robotics</span>
-              </div>
-              <p class="achievement-desc" data-i18n="achievements.a2Desc">
-                Developed an AI-driven control system for a robotic arm tasked with identifying and sorting colored cubes based on their positions across a 3×3 grid.
-              </p>
-              <div class="achievement-links">
-                <a href="https://www.dyd.ro/cri/" class="text-link" target="_blank" rel="noopener noreferrer">
-                  <span data-i18n="achievements.a2Site">Competition Reference</span>
-                  <span aria-hidden="true">↗</span>
-                </a>
-              </div>
+            <h3 class="highlight-title" data-i18n="achievements.a2Title">CRI Competition</h3>
+            <p class="highlight-desc" data-i18n="achievements.a2Desc">
+              Team project developing an AI-based system to control a robotic arm engineered to identify and sort colored cubes according to their positions on a 3×3 grid.
+            </p>
+            <div class="task-pills">
+              <span class="task-pill" data-i18n="achievements.a2Task1">AI Control System</span>
+              <span class="task-pill" data-i18n="achievements.a2Task2">Robotic Arm</span>
+              <span class="task-pill" data-i18n="achievements.a2Task3">3×3 Grid Cube Sorting</span>
             </div>
-          </article>
-
-          <!-- First Mention: E.ON Energy Challenge -->
-          <article class="achievement-card">
-            <div class="rank-badge rank-mention">
-              <span class="rank-num">I</span>
-              <span class="rank-label" data-i18n="achievements.mentionLabel">MENTION</span>
-            </div>
-            <div class="achievement-body">
-              <div class="achievement-top">
-                <h3 class="achievement-title">E.ON Energy Challenge</h3>
-                <span class="subtle-tag" data-i18n="achievements.a3Badge">First Mention</span>
-              </div>
-              <p class="achievement-desc" data-i18n="achievements.a3Desc">
-                Awarded First Mention (Mențiunea I) for a team project proposing a hydrogen-based energy system solution.
-              </p>
+            <div class="achievement-links">
+              <a href="https://www.dyd.ro/cri/" class="text-link" target="_blank" rel="noopener noreferrer">
+                <span data-i18n="achievements.a2Site">Competition Reference</span>
+                <span aria-hidden="true">↗</span>
+              </a>
             </div>
           </article>
+        </div>
 
-          <!-- Second Mention: Severin Bumbaru -->
-          <article class="achievement-card">
-            <div class="rank-badge rank-mention">
-              <span class="rank-num">II</span>
-              <span class="rank-label" data-i18n="achievements.mentionLabel">MENTION</span>
+        <!-- SECOND TIER: MENTIONS & CTF RANKING -->
+        <div class="achievements-secondary-grid">
+          <!-- E.ON Energy Challenge -->
+          <article class="achievement-compact-card">
+            <div class="compact-top">
+              <span class="mention-badge" data-i18n="achievements.a3Badge">Mențiunea I</span>
             </div>
-            <div class="achievement-body">
-              <div class="achievement-top">
-                <h3 class="achievement-title" data-i18n="achievements.a4Title">Severin Bumbaru Creativity Contest</h3>
-                <span class="subtle-tag" data-i18n="achievements.a4Badge">Second Mention</span>
-              </div>
-              <p class="achievement-desc" data-i18n="achievements.a4Desc">
-                Awarded Second Mention (Mențiunea II) for developing an AI-based system for plant recognition.
-              </p>
-            </div>
+            <h3 class="compact-title">E.ON Energy Challenge</h3>
+            <p class="compact-desc" data-i18n="achievements.a3Desc">
+              Awarded First Mention (Mențiunea I) for a project proposing a hydrogen-based energy system.
+            </p>
           </article>
 
-          <!-- 54th Place: CRONOS SECURITY 2026 -->
-          <article class="achievement-card">
-            <div class="rank-badge rank-neutral">
-              <span class="rank-num">#54</span>
-              <span class="rank-label" data-i18n="achievements.rankLabel">RANK</span>
+          <!-- Concursul de Creativitate Severin Bumbaru -->
+          <article class="achievement-compact-card">
+            <div class="compact-top">
+              <span class="mention-badge" data-i18n="achievements.a4Badge">Mențiunea II</span>
             </div>
-            <div class="achievement-body">
-              <div class="achievement-top">
-                <h3 class="achievement-title">CRONOS SECURITY 2026</h3>
-                <span class="subtle-tag" data-i18n="achievements.a5Badge">54th Place · Certified</span>
-              </div>
-              <p class="achievement-desc" data-i18n="achievements.a5Desc">
-                Competed in a team cybersecurity Capture The Flag competition across multiple security categories, earning an official CRONOS SECURITY 2026 competition certificate.
-              </p>
+            <h3 class="compact-title" data-i18n="achievements.a4Title">Concursul de Creativitate Severin Bumbaru</h3>
+            <p class="compact-desc" data-i18n="achievements.a4Desc">
+              Awarded Second Mention (Mențiunea II) for an AI-based plant recognition system.
+            </p>
+          </article>
+
+          <!-- CRONOS SECURITY 2026 -->
+          <article class="achievement-compact-card">
+            <div class="compact-top">
+              <span class="rank-pill" data-i18n="achievements.a5Badge">54th Place · Certified</span>
             </div>
+            <h3 class="compact-title">CRONOS SECURITY 2026</h3>
+            <p class="compact-desc" data-i18n="achievements.a5Desc">
+              Team cybersecurity competition across multiple challenge categories, earning an official competition certificate.
+            </p>
           </article>
         </div>
       </div>
@@ -498,35 +686,46 @@
           <span class="section-index">06</span>
           <div>
             <h2 class="section-title" data-i18n="education.title">Education &amp; Credentials</h2>
-            <p class="section-subtitle" data-i18n="education.subtitle">Academic background, competition certification, and working languages.</p>
+            <p class="section-subtitle" data-i18n="education.subtitle">Academic timeline, verified competition certificate, and language proficiency.</p>
           </div>
         </div>
 
         <div class="edu-layout">
-          <!-- Academic Column -->
-          <div class="edu-column">
-            <article class="edu-card">
-              <span class="meta-badge" data-i18n="education.uniPeriod">2023 – 2027 (Expected) · Fourth-Year Student</span>
-              <h3 class="edu-institution" data-i18n="education.uniName">“Dunărea de Jos” University of Galați</h3>
-              <p class="edu-degree" data-i18n="education.uniProgram">Computer Engineering Studies — Department of Computers</p>
-              <p class="edu-faculty" data-i18n="education.uniFaculty">Faculty of Automation, Computers, Electrical Engineering and Electronics</p>
+          <!-- Academic Timeline -->
+          <div class="edu-timeline">
+            <article class="timeline-item">
+              <div class="timeline-marker timeline-marker-active" aria-hidden="true"></div>
+              <div class="edu-card">
+                <div class="edu-card-top">
+                  <span class="meta-badge" data-i18n="education.uniPeriod">2023 – 2027 (Expected Graduation: 2027)</span>
+                  <span class="status-tag" data-i18n="education.uniStatus">Fourth-Year Student</span>
+                </div>
+                <h3 class="edu-institution" data-i18n="education.uniName">Universitatea „Dunărea de Jos” din Galați</h3>
+                <p class="edu-degree" data-i18n="education.uniProgram">Computer Engineering Studies — Department of Computers (Calculatoare)</p>
+                <p class="edu-faculty" data-i18n="education.uniFaculty">Facultatea de Automatică, Calculatoare, Inginerie Electrică și Electronică</p>
+              </div>
             </article>
 
-            <article class="edu-card">
-              <span class="meta-badge" data-i18n="education.hsBadge">High School Graduate</span>
-              <h3 class="edu-institution" data-i18n="education.hsName">“Emil Racoviță” Theoretical High School</h3>
-              <p class="edu-faculty" data-i18n="person.location">Galați, Romania</p>
+            <article class="timeline-item">
+              <div class="timeline-marker" aria-hidden="true"></div>
+              <div class="edu-card">
+                <div class="edu-card-top">
+                  <span class="meta-badge" data-i18n="education.hsBadge">High School — Graduated</span>
+                </div>
+                <h3 class="edu-institution" data-i18n="education.hsName">Liceul Teoretic „Emil Racoviță”, Galați</h3>
+                <p class="edu-faculty" data-i18n="person.location">Galați, Romania</p>
+              </div>
             </article>
           </div>
 
-          <!-- Certifications & Languages Column -->
+          <!-- Certifications & Languages -->
           <div class="credentials-column">
             <div class="credential-card">
               <h3 class="credential-heading" data-i18n="credentials.certHeading">Certifications</h3>
               <div class="credential-item">
                 <div>
                   <strong class="credential-title">CRONOS SECURITY 2026</strong>
-                  <p class="credential-sub" data-i18n="credentials.certDesc">Competition participation certificate across cybersecurity challenge categories.</p>
+                  <p class="credential-sub" data-i18n="credentials.certDesc">Official competition certificate awarded for participating across cybersecurity categories.</p>
                 </div>
                 <span class="subtle-tag">2026</span>
               </div>
@@ -558,7 +757,7 @@
             <span class="section-index">07</span>
             <h2 class="contact-title" data-i18n="contact.title">Get in Touch</h2>
             <p class="contact-desc" data-i18n="contact.desc">
-              Open to backend development internships, junior software engineering opportunities, cybersecurity collaborations, and technical discussions. Feel free to reach out directly.
+              Available for backend development internships, junior software engineering roles, cybersecurity collaborations, and technical discussions.
             </p>
           </div>
 
