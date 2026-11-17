@@ -3,16 +3,20 @@
 **Backend Developer | Cybersecurity Analyst**  
 Galați, Romania · [Email](mailto:stefan.ionita321@gmail.com) · [GitHub](https://github.com/sk1fallRed25) · [GLOBAL ECR](https://www.globalecr.ro/)
 
+🌐 **[Open my CV website](https://sk1fallred25.github.io/sk1fall/)**  
+The website is bilingual (English / Romanian) and designed for desktop and mobile.
+
 ## Profile
 
-Fourth-year Computer Engineering student at Dunărea de Jos University of Galați. Interested in backend engineering, secure application development, network security and cybersecurity analysis. Practical experience with JavaScript, Node.js, React, PostgreSQL, Supabase and Linux, alongside hands-on participation in technical and cybersecurity competitions.
+Fourth-year Computer Engineering student at Dunărea de Jos University of Galați. Interested in backend engineering, secure application development, network security and cybersecurity analysis. Practical experience with JavaScript, Node.js, React, PostgreSQL, Supabase and Linux.
 
 ## Technical skills
 
 - **Programming & web:** JavaScript (intermediate), Node.js, React
 - **Databases:** PostgreSQL, Supabase
 - **Tools & systems:** Git, GitHub, Docker, Linux, Kali Linux
-- **Cybersecurity:** CTF challenges, Wireshark, Nmap; project-level experience with password hashing, input validation, rate limiting and SQL injection mitigation
+- **Cybersecurity:** CTF challenges, Wireshark, Nmap
+- **Secure development:** Password hashing, input validation, rate limiting and SQL injection mitigation in project work
 
 ## Experience
 
@@ -21,13 +25,14 @@ Fourth-year Computer Engineering student at Dunărea de Jos University of Galaț
 - Configured computers and printers.
 - Configured POS equipment and fiscal cash registers.
 
-## Selected public work
-
 ### GLOBAL ECR — Website and application
 [globalecr.ro](https://www.globalecr.ro/)  
 Collaborated with a teammate on a public-facing website and application built with React and Node.js. Focused mainly on backend development, separated the backend and frontend structure, and automated selected processes.
 
-> Other projects are not linked here because their repositories are private or their implementation details are not intended for public disclosure.
+## Selected projects
+
+- **Network-Guard:** ad-blocking application.
+- **Store Management Application:** private team project built with React, Node.js, PostgreSQL and Supabase. Public description is intentionally high-level; source code and implementation details remain private.
 
 ## Competitions & awards
 
