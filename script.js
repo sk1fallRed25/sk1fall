@@ -576,17 +576,6 @@
     });
   }
 
-  function initCvPlaceholders() {
-    const statusNote = document.getElementById('cv-status-note');
-    document.querySelectorAll('.cv-btn').forEach((btn) => {
-      btn.addEventListener('click', () => {
-        const fileName = btn.getAttribute('data-cv-file');
-        if (!statusNote || !fileName) return;
-        const dict = translations[currentLang].hero;
-        statusNote.textContent = `${dict.cvClickedPrefix} "${fileName}" ${dict.cvClickedSuffix}`;
-      });
-    });
-  }
 
   function initMobileMenu() {
     const menuToggle = document.getElementById('menu-toggle');
@@ -683,7 +672,6 @@
   document.addEventListener('DOMContentLoaded', () => {
     initDynamicYear();
     initLanguageSwitcher();
-    initCvPlaceholders();
     initMobileMenu();
     initActiveNavHighlight();
     initCopyEmail();
